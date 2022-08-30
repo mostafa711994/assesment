@@ -14,23 +14,6 @@ use Modules\Products\Services\UpdateProductService;
 
 class ProductsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     * @return Renderable
-     */
-    public function index()
-    {
-        return view('products::index');
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     * @return Renderable
-     */
-    public function create()
-    {
-        return view('products::create');
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -55,15 +38,7 @@ class ProductsController extends Controller
         return response()->json(['status'=>'success','data'=>$product]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     * @param int $id
-     * @return Renderable
-     */
-    public function edit($id)
-    {
-        return view('products::edit');
-    }
+
 
     /**
      * Update the specified resource in storage.
